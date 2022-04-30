@@ -25,12 +25,7 @@ const { NotImplementedError } = require('../extensions/index.js');
       }
     }
     return  letters.sort().join('');
-    //console.log(letters.sort().join(''))
   }
-
-
-  //createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']);
-
 
 module.exports = {
   createDreamTeam
