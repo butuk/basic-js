@@ -14,9 +14,9 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function transform(arr) {
-  //throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError('Not implemented');
 
-  if(!(arr instanceof Array)) {
+/*  if(!(arr instanceof Array)) {
     throw Error ("'arr' parameter must be an instance of the Array!");
   }
 
@@ -44,7 +44,7 @@ function transform(arr) {
     }
   }
 
-  return resultArr;
+  return resultArr;*/
 }
 
 //console.log(transform([1, 2, 3, '--discard-next', 4, 5]));
