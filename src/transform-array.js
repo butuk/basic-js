@@ -29,7 +29,7 @@ function transform(arr) {
       }
     } else if (arr[i] === '--double-prev') {
       if(i > 0) {
-        resultArr.push(arr[i-1]);
+        resultArr.push(resultArr[i-1]);
       }
     } else if (arr[i] === '--double-next') {
       if(i < total-1) {
@@ -37,7 +37,7 @@ function transform(arr) {
       }
     } else if (arr[i] === '--discard-next') {
       if(i < total-1){
-        arr.splice(i, 1);
+        arr.splice(i+1, 1);
       }
     } else {
       resultArr.push(arr[i]);
@@ -47,7 +47,7 @@ function transform(arr) {
   return resultArr;
 }
 
-// console.log(transform([1, 2, 3, '--double-next', 1337, '--discard-prev', 4, 5]));
+transform([1, 2, 3, '--double-next', 1337, '--discard-prev', 4, 5]);
 
 module.exports = {
   transform
